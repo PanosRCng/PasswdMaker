@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" >
+ 
+		<LinearLayout 	    
+			android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:background="#449def" />		    
+	    
+		<LinearLayout
+        	android:id="@+id/master_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >     
+    		<TextView android:id="@+id/masterpasswd"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="MasterPasswd: "/>
+    		<EditText
+        		android:id="@+id/masterpasswd_add"
+        		android:textSize="20sp"
+        		android:layout_width="fill_parent"
+        		android:inputType="textPassword"
+        		android:layout_height="40sp"/> 	
+    	</LinearLayout>
+
+		<LinearLayout 	    
+			android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:background="#449def" />			
+						
+    	<LinearLayout
+        	android:id="@+id/algorithms_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" > 	
+    		<TextView android:id="@+id/algorithms"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="Algorithms: "/>
+    	</LinearLayout>  	
+    	    		
+		<LinearLayout
+		    android:id="@+id/md5_linear"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" >
+			<CheckBox
+			    android:id="@+id/md5_check"
+			    android:layout_width="wrap_content"
+			    android:layout_height="24dp"
+			    android:button="@drawable/checkbox_selector" >
+			</CheckBox>			
+    		<TextView android:id="@+id/md5"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="md5"/>
+    	</LinearLayout>  
+    	
+		<LinearLayout
+        	android:id="@+id/sha_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+    		<CheckBox
+        		android:id="@+id/sha_check" 
+		    	android:button="@drawable/checkbox_selector" 
+		    	android:layout_width="wrap_content"
+			    android:layout_height="24dp" >
+			</CheckBox>
+    		<TextView android:id="@+id/sha"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="sha "/>
+    	</LinearLayout>  	    	    			    	 
+	
+    	<LinearLayout
+        	android:id="@+id/charsets_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" > 	
+    		<TextView android:id="@+id/charsets"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="Charsets: "/>
+    	</LinearLayout> 	
+  
+		<LinearLayout
+        	android:id="@+id/all_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+    		<CheckBox
+        		android:id="@+id/all_check" 
+		    	android:button="@drawable/checkbox_selector" 
+		    	android:layout_width="wrap_content"
+			    android:layout_height="24dp" >
+			</CheckBox>
+    		<TextView android:id="@+id/all"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="All characters "/>
+    	</LinearLayout> 
+    			    			
+		<LinearLayout
+        	android:id="@+id/letters_numbers_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+    		<CheckBox
+        		android:id="@+id/letters_numbers_check" 
+		    	android:button="@drawable/checkbox_selector" 
+		    	android:layout_width="wrap_content"
+			    android:layout_height="24dp" >
+			</CheckBox>
+    		<TextView android:id="@+id/letters_numbers"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="Letters and Numbers (a-z,A-z,0-9) "/>
+    	</LinearLayout>     
+    	
+		<LinearLayout
+        	android:id="@+id/letters_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+    		<CheckBox
+        		android:id="@+id/letters_check" 
+		    	android:button="@drawable/checkbox_selector" 
+		    	android:layout_width="wrap_content"
+			    android:layout_height="24dp" >
+			</CheckBox>
+    		<TextView android:id="@+id/letters"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="Letters (a-z,A-z) "/>
+    	</LinearLayout>   	
+    	
+		<LinearLayout
+        	android:id="@+id/numbers_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+    		<CheckBox
+        		android:id="@+id/numbers_check" 
+		    	android:button="@drawable/checkbox_selector" 
+		    	android:layout_width="wrap_content"
+			    android:layout_height="24dp" >
+			</CheckBox>
+    		<TextView android:id="@+id/numbers"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="Numbers (0-9) "/>
+    	</LinearLayout> 					
+
+		<LinearLayout
+        	android:id="@+id/special_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >
+    		<CheckBox
+        		android:id="@+id/special_check" 
+		    	android:button="@drawable/checkbox_selector" 
+		    	android:layout_width="wrap_content"
+			    android:layout_height="24dp" >
+			</CheckBox>
+    		<TextView android:id="@+id/special"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="Special Characters "/>
+    	</LinearLayout>   		
+
+    	<LinearLayout
+        	android:id="@+id/hide_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="right"
+        	android:orientation="horizontal" >
+        	<Button
+            	android:id="@+id/hide_button"
+            	android:layout_width="100dp"
+            	android:layout_height="wrap_content"
+            	android:layout_marginRight="10dp"
+            	android:background="@drawable/custom_button"
+            	android:text="hide options" />        
+    	</LinearLayout> 		
+
+		<LinearLayout 	    
+			android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:background="#449def" />	    	
+    								
+		<LinearLayout
+        	android:id="@+id/url_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >     
+    		<TextView android:id="@+id/url"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="Url: "/>
+    		<EditText
+        		android:id="@+id/url_add"
+        		android:textSize="20sp"
+        		android:layout_width="fill_parent"
+        		android:layout_height="40sp"/> 	
+    	</LinearLayout>
+		
+		<LinearLayout
+        	android:id="@+id/length_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >     
+    		<TextView android:id="@+id/length"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="Length: "/>
+    		<EditText
+        		android:id="@+id/length_add"
+        		android:textSize="15sp"
+        		android:layout_width="100sp"
+        		android:layout_height="40sp"/> 	
+    	</LinearLayout>		
+		
+    	<LinearLayout
+        	android:id="@+id/generate_button"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="right"
+        	android:orientation="horizontal" >
+        	<Button
+            	android:id="@+id/gen_button"
+            	android:layout_width="100dp"
+            	android:layout_height="wrap_content"
+            	android:layout_marginRight="20dp"
+            	android:background="@drawable/custom_button"
+            	android:text="generate" />        
+    	</LinearLayout>   
+ 
+		<LinearLayout 	    
+			android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:background="#449def" />	    	
+    	
+    	<LinearLayout
+        	android:id="@+id/passwd_linear"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal" >     
+    		<TextView android:id="@+id/passwd"
+  				android:textSize="14sp"
+  				android:textStyle="bold"
+  				android:textColor="#FFFF00"
+  				android:layout_width="wrap_content"
+  				android:layout_height="wrap_content"
+  				android:text="passwd: "/>
+    		<EditText
+        		android:id="@+id/passwd_add"
+        		android:textSize="20sp"
+        		android:textColor="#10A300"
+        		android:layout_width="fill_parent"
+        		android:layout_height="40sp"/> 	
+    	</LinearLayout>
+    	
+    	<LinearLayout
+        	android:id="@+id/take_button"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="right"
+        	android:orientation="horizontal" >
+        	<Button
+            	android:id="@+id/pick_button"
+            	android:layout_width="100dp"
+            	android:layout_height="wrap_content"
+            	android:layout_marginRight="20dp"
+            	android:background="@drawable/custom_button"
+            	android:text="pick" />        
+    	</LinearLayout> 
+
+		<LinearLayout 	    
+			android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:background="#449def" />	    	
+    		
+	    <LinearLayout
+        	android:id="@+id/wrapper_down"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:gravity="center|bottom"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/about_text"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/blue2"
+            	android:text="powered by panosracing team @" >
+        	</TextView>
+    	</LinearLayout>
+    	
+	</LinearLayout>
+  
+</ScrollView> 
