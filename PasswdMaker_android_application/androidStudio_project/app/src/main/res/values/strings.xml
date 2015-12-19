@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PasswdMaker</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="about_menu_item">about</string>
+    <string name="passwd_button">get</string>>
+    <string name="master_passwd">master passwd</string>
+    <string name="url">url</string>
+    <string name="length">length</string>
+    <string name="passwd">passwd</string>
+    <string name="show_passwd">show passwd</string>
+    <string name="md5sum">md5sum: </string>
+    <string name="hash_algorithm">Hash Algorithm</string>
+    <string name="md5">MD5</string>
+    <string name="sha1">SHA-1</string>
+    <string name="sha256">SHA-256</string>
+    <string name="charsets">Charsets</string>
+    <string name="lowercase_letters">lowercase letters (a-z)</string>
+    <string name="uppercase_letters">uppercase letters (A-Z)</string>
+    <string name="numbers">numbers (0-9)</string>
+    <string name="special_characters">special characters</string>
+    <string name="about">About PasswdMaker</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>

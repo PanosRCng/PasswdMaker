@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.panosrcng.passwdmaker.SettingsActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/hash_algorithm"
+                android:id="@+id/textView4"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#ffffff"
+                android:background="#707070" />
+
+            <RadioGroup
+                android:id="@+id/hash_radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/md5"
+                    android:id="@+id/md5_radioButton"
+                    android:layout_marginLeft="30dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sha1"
+                    android:id="@+id/sha1_radioButton"
+                    android:layout_marginLeft="30dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sha256"
+                    android:id="@+id/sha256_radioButton"
+                    android:layout_marginLeft="30dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/charsets"
+                android:id="@+id/textView5"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="#707070"
+                android:textColor="#ffffff" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lowercase_letters"
+                android:id="@+id/lowercase_checkBox"
+                android:layout_marginLeft="30dp"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uppercase_letters"
+                android:id="@+id/uppercase_checkBox"
+                android:layout_marginLeft="30dp"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/numbers"
+                android:id="@+id/numbers_checkBox"
+                android:layout_marginLeft="30dp"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/special_characters"
+                android:id="@+id/special_checkBox"
+                android:layout_marginLeft="30dp"
+                android:checked="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
